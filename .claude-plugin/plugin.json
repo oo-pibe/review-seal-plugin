@@ -19,5 +19,6 @@
   ],
   "icon": "./.claude-plugin/icon.png",
   "documentationUrl": "https://github.com/oo-pibe/review-seal#readme",
-  "supportUrl": "https://github.com/oo-pibe/review-seal/issues"
+  "supportUrl": "https://github.com/oo-pibe/review-seal/issues",
+  "privacyPolicyUrl": "https://github.com/oo-pibe/review-seal/blob/main/PRIVACY.md"
 }
