@@ -7,13 +7,13 @@ Setup, configuration and the git hook are covered in the [main README](https://g
 ## What the plugin runs
 
 - **Three hooks** (PostToolUse, Stop and UserPromptSubmit) run `node` on the CLI bundled in `scripts/`. They note which files changed, start reviews when a turn ends, and pass findings back to Claude on your next message.
-- **Reviews** run the `claude` command you already have, as a short background session with read-only tools (Read, Grep, Glob). It never sees the conversation that wrote the file. review-seal doesn't read your sign-in or any key; Claude Code handles that.
+- **Reviews** run the `claude` command you already have, as a short background session with read-only tools (Read, Grep, Glob). It never sees the conversation that wrote the file. review-seal starts `claude` with your environment and doesn't look at, store or send your sign-in or any key; Claude Code signs in as usual.
 - **`/review-seal:review <file>`** runs a review on demand.
 
 ## What it sends and stores
 
 - The file under review and your checklist go to Anthropic through your own Claude Code, like any other session.
-- Web lookups are off by default. If a pass in your config turns them on, the reviewer can fetch pages only from the domains you list.
+- Web lookups are off by default. A pass in your config can turn on web search, which runs through Claude Code's search tool, and page fetches, limited to the hosts you list.
 - Results are saved in your repository: `.seal/ledger.json`, plus working files in `.seal/.state/`, which git ignores.
 - There is no review-seal server and no telemetry. See [PRIVACY.md](https://github.com/oo-pibe/review-seal/blob/main/PRIVACY.md).
 
