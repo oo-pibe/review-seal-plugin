@@ -1,13 +1,23 @@
 {
   "name": "review-seal",
   "version": "0.1.2",
-  "description": "Claude Code plugin, pre-commit hook and GitHub Action. A separate Claude Code session reviews changed files against your checklist. Commits wait until the review is current.",
+  "description": "A separate Claude Code session reviews changed files against your checklist. Commits wait until the review is current. Works with the review-seal git hook and GitHub Action.",
   "author": {
     "name": "oo-pibe"
   },
+  "homepage": "https://github.com/oo-pibe/review-seal#readme",
+  "repository": "https://github.com/oo-pibe/review-seal",
   "license": "MIT",
+  "keywords": [
+    "review",
+    "docs",
+    "content-review",
+    "pre-commit",
+    "git-hooks",
+    "quality-gate",
+    "fact-check"
+  ],
   "icon": "./.claude-plugin/icon.png",
   "documentationUrl": "https://github.com/oo-pibe/review-seal#readme",
-  "supportUrl": "https://github.com/oo-pibe/review-seal/issues",
-  "repository": "https://github.com/oo-pibe/review-seal"
+  "supportUrl": "https://github.com/oo-pibe/review-seal/issues"
 }
