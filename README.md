@@ -2,7 +2,7 @@
 
 When Claude finishes a turn, this plugin has a separate Claude Code session review each changed file against your checklist. The verdict is recorded in your repository against the exact text and checklist it read, and the review-seal git hook holds back commits of covered files until their review is current.
 
-Setup, configuration and the git hook are covered in the [main README](https://github.com/oo-pibe/review-seal#readme). The project needs a `.seal/config.json`, which the review-seal npm package creates.
+Setup, configuration and the git hook are covered in the [main README](https://github.com/oo-pibe/review-seal#readme). The source, tests and issues live in [oo-pibe/review-seal](https://github.com/oo-pibe/review-seal); the review-seal-plugin repository is a copy of its `plugin/` folder for the plugin directory. The project needs a `.seal/config.json`, which the review-seal npm package creates.
 
 ## What the plugin runs
 
